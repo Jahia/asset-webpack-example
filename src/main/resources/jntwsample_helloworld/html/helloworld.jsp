@@ -18,16 +18,7 @@
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 
-<template:addResources type="javascript" resources="jquery.min.js,jquery-ui.min.js"/>
-<template:addResources type="css" resources="oldStyle.css"/>
-<script type="text/javascript">
-    $(function () {
-        console.log('jquery version: ' + $.fn.jquery);
-        $('button').on('click', function() {
-            $('.fold').toggle('fold', 1000);
-        });
-    });
-</script>
+<template:addResources type="javascript" resources="apps/main.asset-webpack-example.bundle.js"/>
 
 <button>toggle the div</button>
 <div class="fold"></div>

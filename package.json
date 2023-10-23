@@ -1,0 +1,34 @@
+{
+  "name": "asset-webpack-example",
+  "version": "1.0.0-SNAPSHOT",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn webpack",
+    "webpack": "node --max_old_space_size=2048 ./node_modules/webpack/bin/webpack.js",
+    "watch": "webpack --watch",
+    "build:production": "yarn build --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jahia/asset-webpack-example.git"
+  },
+  "author": "Jahia Core Team <core@jahia.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jahia/asset-webpack-example/issues"
+  },
+  "homepage": "https://github.com/Jahia/asset-webpack-example",
+  "dependencies": {
+    "jquery": "^3.7",
+    "jquery-ui": "^1.13.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
