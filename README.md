@@ -1,1 +1,1 @@
-# asset-webpack-example
+# Asset Webpack example

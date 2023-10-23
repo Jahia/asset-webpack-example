@@ -1,0 +1,13 @@
+{
+  "label": {
+    "settings": {
+      "title": "Asset webpack module setting"
+    },
+    "action": {
+      "title": "Asset webpack module - How to extend the ui ?"
+    },
+    "appsAccordion": {
+      "title": "Asset webpack module"
+    }
+  }
+}
