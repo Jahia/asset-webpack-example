@@ -18,6 +18,13 @@
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 
+<%--
+    This JSP file is a simple example of how to include a webpack-generated bundle in a JSP page.
+    The bundle is added using the <template:addResources> tag.
+    This tag allows Jahia to group resources dynamically and handle caching properly.
+    If you include the script directly with a <script> tag, the browser might keep an old cached version, even after you update the bundle.
+    On the other hand, the <template:addResources> tag adds a hash to the file name, making sure the browser always loads the latest version.
+--%>
 <template:addResources type="javascript" resources="apps/main.asset-webpack-example.bundle.js"/>
 
 <button>toggle the div</button>
